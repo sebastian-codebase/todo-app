@@ -1,8 +1,9 @@
 function getRoutes(app) {
   // Dummy data for Todos
   let todos = [
-    { id: 1, text: "Learn Vue.js", completed: false },
-    { id: 2, text: "Setup Node.js backend", completed: false },
+    { id: 1, text: "Create GitHub Repository", completed: false },
+    { id: 2, text: "Create Node.js with express backend", completed: false },
+    { id: 3, text: "Create Vue.js with PrimeVue frontend", completed: false },
   ];
 
   // Get all todos

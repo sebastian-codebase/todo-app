@@ -77,6 +77,12 @@
   color: #888;
 }
 
+.todo-text-container {
+  display: flex;
+  align-items: center; /* Vertikale Zentrierung */
+  justify-content: center; /* Horizontale Zentrierung (optional) */
+}
+
 /* Text of Todos */
 .todo-text {
   flex: 1;

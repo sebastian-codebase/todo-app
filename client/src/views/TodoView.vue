@@ -23,7 +23,9 @@
         :class="['todo-item', { completed: todo.completed }]"
         @click="toggleTodo(todo)"
       >
-        <span class="todo-text">{{ todo.text }}</span>
+        <div class="todo-text-container">
+          <span class="todo-text">{{ todo.text }}</span>
+        </div>
         <MainButton
           label="Delete"
           icon="pi pi-trash"
