@@ -1,0 +1,105 @@
+/* Container for the To-Do-List */
+.todo-container {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input & Button Container */
+.todo-input-container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.input-text {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-right: 10px;
+  outline: none;
+}
+
+.input-text:focus {
+  border-color: #007bff;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #f0f0f0;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Text of Todos */
+.todo-text {
+  flex: 1;
+  word-wrap: break-word;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Styling for completed Todos */
+.todo-item.completed {
+  opacity: 0.6;
+  /* Move to the bottom by rearranging the order */
+  order: 1;
+}
